@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Challenge</title>
+    <link rel="stylesheet" href="style..css">
+    <script src="index.js"></script>
+</head>
+<body onload="comenzarCuentaRegresiva()">
+
+    <div class="container">
+        <h1 id="textoCuenta">00:00:30</h1>
+
+        <div class="formulario">
+            <p>Escribe tu nombre</p>
+            <input id="preguntaUno" type="text">
+
+            <p>Escribe tu apellido</p>
+            <input id="preguntaDos" type="text">
+
+            <p>¿Cuantos años tienes?</p>
+            <input id="preguntaTres" type="number">
+
+            <p>¿Cual es tu nacionalidad?</p>
+            <input id="preguntaCuatro" type="text">
+
+            <p>¿Como se llama tu padre?</p>
+            <input id="preguntaCinco" type="text">
+        </div>
+
+        <audio id="audioGameOver">
+            <source src="./audios/alarma.mp3" type="audio/mpeg">
+        </audio>
+
+        <button onclick="finalizado()">LISTO</button>
+
+        <div class="alert" id="mensajeGameOver">GAME OVER!</div>
+    </div>
+</body>
+</html> 
